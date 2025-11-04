@@ -26,24 +26,26 @@
             <!-- Registration Form -->
             <section class="registration_form">
                 <h2 class="form_title">Registration Form</h2>
-                <form id="registrationForm">
-                    <div class="form_group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" placeholder="Enter your first name" required>
-                    </div>
-                    <div class="form_group">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" placeholder="Enter your last name" required>
-                    </div>
-                    <div class="form_group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="example@email.com" required>
-                    </div>
-                    <div class="form_buttons">
-                        <button type="button" class="btn btn_update" id="updateBtn">Update</button>
-                        <button type="submit" class="btn btn_register" id="registerBtn">Register</button>
-                    </div>
-                </form>
+                <div class="form_content">
+                    <form id="registrationForm">
+                        <div class="form_group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" placeholder="Enter your first name" required>
+                        </div>
+                        <div class="form_group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" placeholder="Enter your last name" required>
+                        </div>
+                        <div class="form_group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="example@email.com" required>
+                        </div>
+                        <div class="form_buttons" id="formButtons">
+                            <button type="button" class="btn btn_update" id="updateBtn">Update</button>
+                            <button type="submit" class="btn btn_register" id="registerBtn">Register</button>
+                        </div>
+                    </form>
+                </div>
             </section>
 
             <!-- Current List -->
@@ -69,10 +71,10 @@
 
         <footer class="footer">
             <ul class="items_list_footer">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
             </ul>
         </footer>
     </main>

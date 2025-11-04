@@ -57,8 +57,7 @@ body {
 }
 
 .item a:hover {
-    /* background: rgba(255, 255, 255, 0.6); */
-    color:#c62828;
+    color: #c62828;
     transform: translateY(-2px);
 }
 
@@ -73,19 +72,26 @@ body {
 /* Registration Form */
 .registration_form {
     background: rgba(255, 255, 255, 0.5);
-    padding: 30px;
+    padding: 0;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     flex: 0 0 350px;
+    overflow: hidden;
 }
 
 .form_title {
+    background: linear-gradient(180deg, #ecf98a 0%, #ffffff 100%);
     color: #5d4037;
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 25px;
+    margin-bottom: 0;
+    padding: 20px 30px;
     text-align: left;
+}
+
+.form_content {
+    padding: 30px;
 }
 
 .form_group {
@@ -168,23 +174,27 @@ body {
 /* Current List */
 .current_list {
     background: rgba(255, 255, 255, 0.5);
-    padding: 30px;
+    padding: 0;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     flex: 1;
+    overflow: hidden;
 }
 
 .list_title {
+    background: linear-gradient(180deg, #ecf98a 0%, #ffffff 100%);
     color: #5d4037;
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 25px;
+    margin-bottom: 0;
+    padding: 20px 30px;
     text-align: left;
 }
 
 .table_container {
     overflow-x: auto;
+    padding: 30px;
 }
 
 table {
@@ -299,18 +309,16 @@ tbody td:last-child {
     gap: 30px;
 }
 
-.items_list_footer li>a {
-    text-decoration: none;
+.items_list_footer li {
     color: #110907;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.items_list_footer li>a:hover {
+.items_list_footer li:hover {
     color: #e10909;
     transform: translateY(-2px);
-    text-decoration: underline;
 }
 
 /* Responsive */
